@@ -1,0 +1,87 @@
+html
+  box-sizing: border-box
+*, *:after, *:before
+  box-sizing: inherit
+.container
+  margin: auto
+  max-width: 1140px
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: nowrap
+.top-menu
+  padding-top: 5px
+  background: $grey
+.logo
+  max-height: 80px
+  display: flex
+  align-items: center
+  img
+    height: 60px
+    margin-right: 5px
+  strong
+    text-align: left
+  p
+    letter-spacing: 0.1px
+.contacts
+  display: flex
+  flex-wrap: nowrap
+  &__display
+    display: flex
+    align-items: center
+    margin-left: 15px
+    img
+      margin-right: 5px
+  &-map
+    p
+      margin: auto
+.social
+  display: flex
+  img
+    margin-left: 10px
+.languages
+  a
+    display: block
+    text-decoration: none
+.build
+    background: center no-repeat url(../img/build.jpg)
+    background-size: 120%
+    height: 70vh
+.nav
+  padding: 20px 0
+  border-top: 1px solid $grey
+  border-bottom: 1px solid $grey
+.cards
+  margin-top: -50px 
+  &-item
+    width:calc( ( 100% - 40px ) / 3 )
+    text-align: center
+    background: #ffffff
+.gov
+  margin-top: 50px
+  padding: 50px 0
+  background-color: $grey
+  &-item
+    display: flex
+    align-items: center
+    justify-content: center
+    width:calc( ( 100% - 40px ) / 3 )
+    &:nth-child(3)
+      img
+        margin-bottom: 40px
+        padding-right: 15px
+        height: 25px
+  &-text
+    position: relative
+    padding-left: 10px
+    text-transform: 
+    font-weight: bold
+    &__border::before
+      content: ""
+      position: absolute
+      margin-left: -15px
+      width: 3px
+      height: 70px
+      background: linear-gradient(#FFCB04 50%, #2E368E 50%)
+  
+

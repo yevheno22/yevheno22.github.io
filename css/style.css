@@ -94,8 +94,8 @@ html {
 
 .build {
   background: center no-repeat url(../img/build.jpg);
-  background-size: cover;
-  height: 60vh;
+  background-size: 120%;
+  height: 70vh;
 }
 
 .nav {

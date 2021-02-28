@@ -2,6 +2,7 @@ html
   box-sizing: border-box
 *, *:after, *:before
   box-sizing: inherit
+  font-family: 'LoraMedium',serif
 .container
   margin: auto
   max-width: 1140px
@@ -22,7 +23,7 @@ html
   strong
     text-align: left
   p
-    letter-spacing: 0.1px
+    letter-spacing: -0.9px
 .contacts
   display: flex
   flex-wrap: nowrap
@@ -46,17 +47,23 @@ html
 .build
     background: center no-repeat url(../img/build.jpg)
     background-size: 120%
-    height: 70vh
+    height: 65vh
 .nav
   padding: 20px 0
   border-top: 1px solid $grey
   border-bottom: 1px solid $grey
 .cards
-  margin-top: -50px 
+  margin-top: -100px 
   &-item
+    display: flex
+    align-items: center
+    justify-content: center
     width:calc( ( 100% - 40px ) / 3 )
+    min-height: 200px
     text-align: center
     background: #ffffff
+    border: solid 2px
+    border-radius: 50px
 .gov
   margin-top: 50px
   padding: 50px 0

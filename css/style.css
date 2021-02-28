@@ -1,3 +1,30 @@
+@font-face {
+  font-family: 'LoraMedium';
+  src: url("../fonts/Lora-Medium.eot");
+  src: url("../fonts/Lora-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Lora-Medium.woff2") format("woff2"), url("../fonts/Lora-Medium.woff") format("woff"), url("../fonts/Lora-Medium.ttf") format("truetype"), url("../fonts/Lora-Medium.svg#../fonts/Lora-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LoraMediumItalic';
+  src: url("../fonts/Lora-MediumItalic.eot");
+  src: url("../fonts/Lora-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lora-MediumItalic.woff2") format("woff2"), url("../fonts/Lora-MediumItalic.woff") format("woff"), url("../fonts/Lora-MediumItalic.ttf") format("truetype"), url("../fonts/Lora-MediumItalic.svg#../fonts/Lora-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LoraBold';
+  src: url("../fonts/Lora-Bold.eot");
+  src: url("../fonts/Lora-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lora-Bold.woff2") format("woff2"), url("../fonts/Lora-Bold.woff") format("woff"), url("../fonts/../fonts/Lora-Bold.ttf") format("truetype"), url("../fonts/Lora-Bold.svg#../fonts/Lora-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,6 +33,7 @@ html {
 *, *:after, *:before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  font-family: 'LoraMedium',serif;
 }
 
 .container {
@@ -48,7 +76,7 @@ html {
 }
 
 .logo p {
-  letter-spacing: 0.1px;
+  letter-spacing: -0.9px;
 }
 
 .contacts {
@@ -95,7 +123,7 @@ html {
 .build {
   background: center no-repeat url(../img/build.jpg);
   background-size: 120%;
-  height: 70vh;
+  height: 65vh;
 }
 
 .nav {
@@ -105,13 +133,25 @@ html {
 }
 
 .cards {
-  margin-top: -50px;
+  margin-top: -100px;
 }
 
 .cards-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: calc( ( 100% - 40px ) / 3);
+  min-height: 200px;
   text-align: center;
   background: #ffffff;
+  border: solid 2px;
+  border-radius: 50px;
 }
 
 .gov {
